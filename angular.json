@@ -23,7 +23,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/styles.scss"
             ],
             "scripts": []
           },
@@ -123,5 +124,10 @@
       }
     }
   },
-  "defaultProject": "angular-tour-of-heroes"
+  "defaultProject": "angular-tour-of-heroes",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }
